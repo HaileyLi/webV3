@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hailey</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Raleway" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.scss" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <div id="hamburger" class="collap">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <nav class="navigate">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#intro">BriefIntro</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experiences">Experiences</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="pad">
+        <div id="home" class="lefthalf" style="" onscroll="scrollfn1()">
+            <h1>HAI</h1>
+            <div id="left2" class="lefthalf-2" style="background-color:white;position:absolute;width:50%;height:100%;top:100%;">
+            <p id="left2p" style="text-align:center;font-size:300%;width:80%;margin:0 auto;margin-top:30%;">University of Waterloo<br><br>Computational Math Major<br>Statistics Major<br>Computer Science Minor<br></p>
+            </div>
+            <div id="projects" class="lefthalf-3" style="background-color:black;position:absolute;width:50%;height:100%;top:200%;">
+                <p style="text-align:center;font-size:300%;width:80%;margin:0 auto;margin-top:30%;">University of Waterloo<br><br>Computational Math Major<br>Statistics Major<br>Computer Science Minor<br></p>
+            </div>
+        </div>
+        
+        <div class="righthalf" style="">
+            <h1>LEY</h1>
+            <div id="right2" class="righthalf-2" style="background-color:black;position:absolute;width:50%;height:100%;top:100%;">
+                    <p id="right2p" style="text-align:center;font-size:300%;width:80%;margin:0 auto;margin-top:35%;color:white;">Front-end Developer<br>
+                    UI/UX Designer<br>Visual Designer</p>
+            </div>
+            <div id="right3" class="righthalf-3" style="background-color:white;position:absolute;width:50%;height:100%;top:200%;">
+                    <p style="text-align:center;font-size:300%;width:80%;margin:0 auto;margin-top:35%;color:white;">Front-end Developer<br>
+                    UI/UX Designer<br>Visual Designer</p>
+            </div>
+        </div>
+    </div>
+<script>
+   window.onscroll = function(){
+        scrollfn2()
+       };
+
+   function scrollfn2() {
+       var topWindow = $(window).scrollTop();
+       if (topWindow == (1006/1080) * screen.height){
+        document.getElementById("left2p").style.position = "fixed";
+        document.getElementById("right2p").style.position = "fixed";
+       }
+   }
+
+   $('.collap').click( function() {
+  
+     $(this).toggleClass('expand');
+    
+    })
+</script>
+</body>
+</html>
