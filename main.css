@@ -1,0 +1,225 @@
+html {
+  font-family: "Raleway", sans-serif;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+h1 {
+  font-size: 500%;
+  font-family: "Abril Fatface", cursive;
+  margin: 0;
+  top: 40%;
+}
+section#home h1 {
+  position: absolute;
+}
+#pad {
+  width: 100%;
+  height: 100%;
+}
+
+/* home section */
+section#home {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.home-left {
+  width: 50%;
+  height: 100%;
+  float: left;
+  background-color: black;
+  overflow: hidden;
+}
+.home-left h1 {
+  color: white;
+  right: 50%;
+}
+.home-right {
+  width: 50%;
+  height: 100%;
+  float: right;
+  background-color: white;
+  overflow: hidden;
+}
+.home-right h1 {
+  color: black;
+}
+/* introduction section */
+section#intro {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.intro-right {
+  width: 50%;
+  height: 100%;
+  float: right;
+  background-color: black;
+  overflow: hidden;
+}
+.intro-right h1 {
+  color: white;
+  right: 50%;
+}
+.intro-left {
+  width: 50%;
+  height: 100%;
+  float: left;
+  background-color: white;
+  overflow: hidden;
+}
+.intro-left h1 {
+  color: black;
+}
+/* projects section */
+section#projects {
+  display: block;
+  height: 100%;
+  background-color: #131326;
+  overflow: hidden;
+  text-align: center;
+}
+
+section#projects h2 {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 80px;
+  margin-top: 30px;
+  display: inline-block;
+}
+div.project {
+  overflow: hidden;
+}
+div.project.proj1 {
+  width: 280px;
+  height: 280px;
+  float: left;
+  background-color: #2fbfc0;
+}
+div.project.proj2 {
+  width: 280px;
+  height: 280px;
+  float: left;
+  background-color: #f2c230;
+}
+div.project.proj3 {
+  width: 280px;
+  height: 280px;
+  float: left;
+  background-color: #3078c1;
+}
+div.project.proj4 {
+  width: 280px;
+  height: 280px;
+  float: left;
+  background-color: #b31b29;
+}
+.plist {
+  display: inline-block;
+}
+div.project.proj5 {
+  width: 280px;
+  height: 280px;
+  float: left;
+  background-color: #e84c2e;
+}
+div.project.proj6 {
+  width: 280px;
+  height: 280px;
+  float: left;
+  background-color: #f2c230;
+}
+div.project.proj7 {
+  width: 280px;
+  height: 280px;
+  float: left;
+  background-color: #3078c1;
+}
+div.project.proj8 {
+  width: 280px;
+  height: 280px;
+  float: left;
+  background-color: #b31b29;
+}
+/* experiences section */
+
+/* hamburger menu */
+#hamburger {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 80%;
+  right: 85%;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
+.collap nav.navigate {
+  display: none;
+}
+.expand nav.navigate {
+  display: block;
+}
+.bar {
+  display: block;
+  width: 40%;
+  height: 3%;
+  margin-top: 10%;
+  background: white;
+  transition: 0.25s;
+  -webkit-transition: 0.25s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.expand .bar:nth-child(1) {
+  transform: translateY(10px) rotate(135deg);
+}
+.expand .bar:nth-child(2) {
+  opacity: 0;
+}
+.expand .bar:nth-child(3) {
+  transform: translateY(-10px) rotate(-135deg);
+}
+
+.expand nav {
+  position: fixed;
+  transition: all 0.25s;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: black;
+  ul {
+    transition: all 0s;
+    position: relative;
+    left: 0;
+    z-index: 2;
+  }
+  a {
+    transition: all 0.15s;
+    text-decoration: none;
+    font-size: 2em;
+    padding: 5px;
+    color: #fff;
+    display: block;
+    &:hover {
+      background-color: rgba(white, 0.8);
+      transition: all 0.15s;
+      letter-spacing: 2px;
+      color: #333;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+  }
+}

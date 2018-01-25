@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Raleway" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" media="screen" href="main.scss" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
 </head>
+
 <body>
     <div id="hamburger" class="collap">
         <span class="bar"></span>
@@ -17,38 +19,82 @@
         <span class="bar"></span>
         <nav class="navigate">
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#intro">BriefIntro</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experiences">Experiences</a></li>
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#intro">BriefIntro</a>
+                </li>
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#experiences">Experiences</a>
+                </li>
             </ul>
         </nav>
     </div>
     <div id="pad">
-        <div id="home" class="lefthalf" style="" onscroll="scrollfn1()">
-            <h1>HAI</h1>
-            <div id="left2" class="lefthalf-2" style="background-color:white;position:absolute;width:50%;height:100%;top:100%;">
-            <p id="left2p" style="text-align:center;font-size:300%;width:80%;margin:0 auto;margin-top:30%;">University of Waterloo<br><br>Computational Math Major<br>Statistics Major<br>Computer Science Minor<br></p>
+        <section id="home">
+            <div class="home-left">
+                <h1>HAI</h1>
             </div>
-            <div id="projects" class="lefthalf-3" style="background-color:black;position:absolute;width:50%;height:100%;top:200%;">
-                <p style="text-align:center;font-size:300%;width:80%;margin:0 auto;margin-top:30%;">University of Waterloo<br><br>Computational Math Major<br>Statistics Major<br>Computer Science Minor<br></p>
+
+            <div class="home-right">
+                <h1>LEY</h1>
             </div>
-        </div>
-        
-        <div class="righthalf" style="">
-            <h1>LEY</h1>
-            <div id="right2" class="righthalf-2" style="background-color:black;position:absolute;width:50%;height:100%;top:100%;">
-                    <p id="right2p" style="text-align:center;font-size:300%;width:80%;margin:0 auto;margin-top:35%;color:white;">Front-end Developer<br>
-                    UI/UX Designer<br>Visual Designer</p>
+        </section>
+        <section id="intro">
+            <div class="intro-left">
+                <p id="left2p" style="text-align:center;font-size:300%;width:80%;margin:0 auto;margin-top:30%;">University of Waterloo
+                    <br>
+                    <br>Computational Math Major
+                    <br>Statistics Major
+                    <br>Computer Science Minor
+                    <br>
+                </p>
             </div>
-            <div id="right3" class="righthalf-3" style="background-color:white;position:absolute;width:50%;height:100%;top:200%;">
-                    <p style="text-align:center;font-size:300%;width:80%;margin:0 auto;margin-top:35%;color:white;">Front-end Developer<br>
-                    UI/UX Designer<br>Visual Designer</p>
+
+            <div class="intro-right">
+                <p id="right2p" style="text-align:center;font-size:300%;width:80%;margin:0 auto;margin-top:35%;color:white;">Front-end Developer
+                    <br> UI/UX Designer
+                    <br>Visual Designer</p>
             </div>
-        </div>
+        </section>
+        <section id="projects">
+            <h2 class="title">PROJECTS</h2>
+            <div class="plist">
+                <div class="project proj1">
+
+                </div>
+                <div class="project proj2">
+
+                </div>
+                <div class="project proj3">
+
+                </div>
+                <div class="project proj4">
+
+                </div>
+            </div>
+            <div class="plist">
+                <div class="project proj1">
+
+                </div>
+                <div class="project proj2">
+
+                </div>
+                <div class="project proj3">
+
+                </div>
+                <div class="project proj4">
+
+                </div>
+            </div>
+        </section>
     </div>
-<script>
-   window.onscroll = function(){
+    <script>
+  /* window.onscroll = function(){
         scrollfn2()
        };
 
@@ -64,7 +110,8 @@
   
      $(this).toggleClass('expand');
     
-    })
-</script>
+    })*/
+    </script>
 </body>
+
 </html>
