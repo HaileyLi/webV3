@@ -86,6 +86,7 @@ section#projects {
   overflow: hidden;
   text-align: center;
   min-height: 100%;
+  overflow: hidden;
 }
 
 section#projects h2 {
@@ -98,6 +99,11 @@ section#projects h2 {
 .plist {
   display: inline-block;
   width: 84%;
+}
+.elist {
+  display: inline-block;
+  width: 84%;
+  margin-bottom: 50px;
 }
 div.project {
   float: left;
@@ -134,21 +140,27 @@ div.project {
   -ms-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
 }
-
+.backhover:hover .pr {
+  border: 10px solid #131227;
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+}
 div.proj1 {
   width: 100%;
   height: 100%;
+  float: left;
   background-color: #2fbfc0;
 }
 div.proj2 {
   width: 100%;
-  height: 100%;
+  height: 50%;
   float: left;
+  margin-top: 50%;
   background-color: #182045;
 }
 div.proj3 {
   width: 100%;
-  height: 100%;
+  height: 200%;
   float: left;
   background-color: #3078c1;
 }
@@ -175,6 +187,7 @@ div.proj6 {
 div.proj7 {
   width: 100%;
   height: 100%;
+  margin-left: 100%;
   background-color: #213880;
 }
 
