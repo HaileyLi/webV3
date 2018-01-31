@@ -12,7 +12,10 @@
     <script src="main.js"></script>
 </head>
 
-<body>
+<body id="myweb">
+    <div class="moreinfo">
+        <img src="img/acc2.jpg">
+    </div>
     <div id="hamburger" class="collap">
         <span class="bar"></span>
         <span class="bar"></span>
@@ -64,85 +67,90 @@
         <section id="projects">
             <h2 class="title">PROJECTS & EXPERIENCES</h2>
             <div class="elist">
-                <div class="project backhover">
-                    <div class="pr proj1" style="float:none;">
+                <div class="project imghover">
+                    <div class="pr exp1" onclick="seemore()">
+                        <img class="img1" src="img/gwl2.png" alt="gwl-logo" />
+                        <img class="img2" src="img/gwl.png" alt="gwl-logo" />
                     </div>
-                    <div class="overlay" style="margin-top:-302px;">fff</div>
                 </div>
                 <div class="project backhover">
-                    <div class="pr proj6" style="float:none;">
+                    <div class="pr exp2">
+                        <img class="img1" src="img/acc.jpg" alt="gwl-logo" />
+                        <img class="img2" src="img/acc2.jpg" alt="gwl-logo" />
                     </div>
-                    <div class="overlay" style="margin-top:-302px;">fff</div>
+
                 </div>
                 <div class="project backhover">
-                    <div class="pr proj5" style="float:none;">
+                    <div class="pr exp3">
+                        <img class="img1" src="img/packantslogo.png" alt="gwl-logo" />
+                        <img class="img2" src="img/packantslogo2.png" alt="gwl-logo" />
                     </div>
-                    <div class="overlay" style="margin-top:-302px;">fff</div>
+
                 </div>
                 <div class="project backhover">
-                    <div class="pr proj4" style="float:none;">
+                    <div class="pr exp4">
+                        <img class="img1" src="img/OICRlogo.png" alt="gwl-logo" />
+                        <img class="img2" src="img/OICRlogo2.png" alt="gwl-logo" />
                     </div>
-                    <div class="overlay" style="margin-top:-302px;">fff</div>
+
                 </div>
             </div>
             <div class="plist">
                 <div class="project backhover">
-                    <div class="pr proj1" style="float:none;">
+                    <div class="pr proj1">
                     </div>
-                    <div class="overlay" style="margin-top:-302px;">fff</div>
+
                 </div>
-                <div class="project backhover ">
+                <div class="project backhover">
                     <div class="pr proj2 ">
                     </div>
-                    <div class="overlay " style="height:50%;margin-top:50%;"></div>
                 </div>
                 <div class="project backhover">
                     <div class=" pr proj3 ">
                     </div>
-                    <div class="overlay "></div>
                 </div>
-                <div class="project backhover ">
+                <div class="project backhover">
                     <div class="pr proj4 ">
                     </div>
-                    <div class="overlay "></div>
                 </div>
-                <div class="project backhover ">
+                <div class="project backhover">
                     <div class="pr proj5 ">
                     </div>
-                    <div class="overlay "></div>
                 </div>
-                <div class="project backhover ">
+                <div class="project backhover">
                     <div class="pr proj6 ">
                     </div>
-                    <div class="overlay "></div>
                 </div>
-                <div class="project backhover ">
+                <div class="project backhover">
                     <div class="pr proj7 ">
                     </div>
-                    <div class="overlay " style="margin-top:-302px;margin-left:100%; "></div>
                 </div>
 
             </div>
         </section>
     </div>
     <script>
-  /* window.onscroll = function(){
-        scrollfn2()
-       };
-
-   function scrollfn2() {
-       var topWindow = $(window).scrollTop();
-       if (topWindow == (1006/1080) * screen.height){
-        document.getElementById("left2p ").style.position = "fixed ";
-        document.getElementById("right2p ").style.position = "fixed ";
-       }
-   }
-
-   $('.collap').click( function() {
-  
-     $(this).toggleClass('expand');
-    
-    })*/
+        /* window.onscroll = function(){
+              scrollfn2()
+             };
+      
+         function scrollfn2() {
+             var topWindow = $(window).scrollTop();
+             if (topWindow == (1006/1080) * screen.height){
+              document.getElementById("left2p ").style.position = "fixed ";
+              document.getElementById("right2p ").style.position = "fixed ";
+             }
+         }
+      
+         $('.collap').click( function() {
+        
+           $(this).toggleClass('expand');
+          
+          })*/
+        function seemore() {
+            var element = document.getElementById("myweb");
+            element.classList.add("getinfo")
+        }
     </script>
 </body>
 
