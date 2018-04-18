@@ -9,7 +9,9 @@
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Raleway" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="docs.min.css" />
     <script src="main.js"></script>
+    <script src="bootstrap.min.js"></script>
 </head>
 
 <body id="myweb">
@@ -64,13 +66,19 @@
                     <br>Visual Designer</p>
             </div>
         </section>
+        <section>
+            <img src="img/resume-PS-2018.jpg" style="width:100%;">
+        </section>
+        </section>
         <section id="projects">
             <h2 class="title">PROJECTS & EXPERIENCES</h2>
             <div class="elist">
                 <div class="project imghover">
                     <div class="pr exp1" onclick="seemore()">
-                        <img class="img1" src="img/gwl2.png" alt="gwl-logo" />
-                        <img class="img2" src="img/gwl.png" alt="gwl-logo" />
+                        <a data-toggle="modal" data-target="#myModal">
+                            <img class="img1" src="img/gwl2.png" alt="gwl-logo" />
+                            <img class="img2" src="img/gwl.png" alt="gwl-logo" />
+                        </a>
                     </div>
                 </div>
                 <div class="project backhover">
@@ -95,63 +103,63 @@
 
                 </div>
             </div>
-            <div class="plist">
-                <div class="project backhover">
-                    <div class="pr proj1">
+
+            <div>
+                <h2>QuesBank</h2>
+                <div class="main">
+                    <div class="slider slider-nav">
+                        <div class="slick-slide">
+                            <img src="img/quesbank/mainpage.jpg" style="width:50%;">
+                        </div>
+                        <div class="slick-slide">
+                            <img src="img/quesbank/login1.jpg" style="width:50%;">
+                        </div>
+                        <div class="slick-slide">
+                            <img src="img/quesbank/loginstudent.jpg" style="width:50%;">
+                        </div>
+                        <div class="slick-slide">
+                            <img src="img/quesbank/mainpage.jpg" style="width:50%;">
+                        </div>
+                        <div class="slick-slide">
+                            <img src="img/quesbank/teacherpage.jpg" style="width:50%;">
+                        </div>
+                    </div>
+                </div>
+                <h2>QuesBank</h2>
+                <div class="main">
+                    <div class="slider slider-nav">
+                        <div class="slick-slide">
+                            <img src="img/do/indexdesign-01.jpg" style="width:50%;">
+                        </div>
+                        <div class="slick-slide">
+                            <img src="img/do/indexdesign-02.jpg" style="width:50%;">
+                        </div>
+                        <div class="slick-slide">
+                            <img src="img/do/indexdesign-03.jpg" style="width:50%;">
+                        </div>
+                        <div class="slick-slide">
+                            <img src="img/do/indexdesign-04.jpg" style="width:50%;">
+                        </div>
+                        <div class="slick-slide">
+                            <img src="img/do/indexdesign-05.jpg" style="width:50%;">
+                        </div>
+                        <div class="slick-slide">
+                            <img src="img/do/indexdesign-06.jpg" style="width:50%;">
+                        </div>
+                        <div class="slick-slide">
+                            <img src="img/do/indexdesign-07.jpg" style="width:50%;">
+                        </div>
                     </div>
 
                 </div>
-                <div class="project backhover">
-                    <div class="pr proj2 ">
-                    </div>
-                </div>
-                <div class="project backhover">
-                    <div class=" pr proj3 ">
-                    </div>
-                </div>
-                <div class="project backhover">
-                    <div class="pr proj4 ">
-                    </div>
-                </div>
-                <div class="project backhover">
-                    <div class="pr proj5 ">
-                    </div>
-                </div>
-                <div class="project backhover">
-                    <div class="pr proj6 ">
-                    </div>
-                </div>
-                <div class="project backhover">
-                    <div class="pr proj7 ">
-                    </div>
-                </div>
 
-            </div>
         </section>
-    </div>
-    <script>
-        /* window.onscroll = function(){
-              scrollfn2()
-             };
-      
-         function scrollfn2() {
-             var topWindow = $(window).scrollTop();
-             if (topWindow == (1006/1080) * screen.height){
-              document.getElementById("left2p ").style.position = "fixed ";
-              document.getElementById("right2p ").style.position = "fixed ";
-             }
-         }
-      
-         $('.collap').click( function() {
-        
-           $(this).toggleClass('expand');
-          
-          })*/
-        function seemore() {
-            var element = document.getElementById("myweb");
-            element.classList.add("getinfo")
-        }
-    </script>
+        </div>
+        <script>
+
+            var indexToGet = $('.slider .slick-slide').index($('#center_on_me'));
+
+        </script>
 </body>
 
 </html>
