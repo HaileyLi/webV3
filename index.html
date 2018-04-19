@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="docs.min.css" />
     <script src="main.js"></script>
     <script src="bootstrap.min.js"></script>
+    <script src="main.js"></script>
 </head>
 
 <body id="myweb">
@@ -51,7 +52,7 @@
         </section>
         <section id="intro">
             <div class="intro-left">
-                <p id="left2p" style="text-align:center;font-size:300%;width:80%;margin:0 auto;margin-top:30%;">University of Waterloo
+                <p id="left2p">University of Waterloo
                     <br>
                     <br>Computational Math Major
                     <br>Statistics Major
@@ -61,7 +62,7 @@
             </div>
 
             <div class="intro-right">
-                <p id="right2p" style="text-align:center;font-size:300%;width:80%;margin:0 auto;margin-top:35%;color:white;">Front-end Developer
+                <p id="right2p" style="">Front-end Developer
                     <br> UI/UX Designer
                     <br>Visual Designer</p>
             </div>
@@ -106,60 +107,61 @@
 
             <div>
                 <h2>QuesBank</h2>
-                <div class="main">
-                    <div class="slider slider-nav">
-                        <div class="slick-slide">
-                            <img src="img/quesbank/mainpage.jpg" style="width:50%;">
-                        </div>
-                        <div class="slick-slide">
-                            <img src="img/quesbank/login1.jpg" style="width:50%;">
-                        </div>
-                        <div class="slick-slide">
-                            <img src="img/quesbank/loginstudent.jpg" style="width:50%;">
-                        </div>
-                        <div class="slick-slide">
-                            <img src="img/quesbank/mainpage.jpg" style="width:50%;">
-                        </div>
-                        <div class="slick-slide">
-                            <img src="img/quesbank/teacherpage.jpg" style="width:50%;">
-                        </div>
-                    </div>
-                </div>
-                <h2>QuesBank</h2>
-                <div class="main">
-                    <div class="slider slider-nav">
-                        <div class="slick-slide">
-                            <img src="img/do/indexdesign-01.jpg" style="width:50%;">
-                        </div>
-                        <div class="slick-slide">
-                            <img src="img/do/indexdesign-02.jpg" style="width:50%;">
-                        </div>
-                        <div class="slick-slide">
-                            <img src="img/do/indexdesign-03.jpg" style="width:50%;">
-                        </div>
-                        <div class="slick-slide">
-                            <img src="img/do/indexdesign-04.jpg" style="width:50%;">
-                        </div>
-                        <div class="slick-slide">
-                            <img src="img/do/indexdesign-05.jpg" style="width:50%;">
-                        </div>
-                        <div class="slick-slide">
-                            <img src="img/do/indexdesign-06.jpg" style="width:50%;">
-                        </div>
-                        <div class="slick-slide">
-                            <img src="img/do/indexdesign-07.jpg" style="width:50%;">
-                        </div>
-                    </div>
+                <div id="photos">
+                    <ul id="photo-gallery">
+                        <li>
+                            <a href="img/quesbank/mainpage.jpg">
+                                <img src="img/quesbank/mainpage.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="img/quesbank/login1.jpg">
+                                <img src="img/quesbank/login1.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="img/quesbank/loginstudent.jpg">
+                                <img src="img/quesbank/loginstudent.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="img/quesbank/loginteacher.jpg">
+                                <img src="img/quesbank/loginteacher.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="img/quesbank/teacherpage.jpg">
+                                <img src="img/quesbank/teacherpage.jpg">
+                            </a>
+                        </li>
 
+                    </ul>
                 </div>
+            </div>
+
+            <div>
+                <h2>BUJO</h2>
+                <div id="photos">
+                    <ul id="photo-gallery">
+                        <li>
+                            <a href="img/bujo/view2-01.jpg">
+                                <img src="img/bujo/view2-01.jpg">
+                            </a>
+                        </li>
+
+
+
+                    </ul>
+                </div>
+            </div>
 
         </section>
-        </div>
-        <script>
+    </div>
+    <script>
 
-            var indexToGet = $('.slider .slick-slide').index($('#center_on_me'));
 
-        </script>
+
+    </script>
 </body>
 
 </html>
