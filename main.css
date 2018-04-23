@@ -12,7 +12,7 @@ body {
   height: 100%;
 }
 h1 {
-  font-size: 500%;
+  font-size: 90px;
   font-family: "Abril Fatface", cursive;
   margin: 0;
   top: 40%;
@@ -107,7 +107,7 @@ section#projects {
 section#projects h2 {
   color: white;
   font-family: "Raleway", sans-serif;
-  font-size: 80px;
+  font-size: 52px;
   margin-top: 30px;
   display: inline-block;
 }
@@ -123,7 +123,6 @@ section#projects h2 {
 div.project {
   float: left;
   width: 25%;
-  height: 302px;
 }
 
 div.proj1 {
@@ -295,6 +294,15 @@ div.proj7 {
   }
 }
 
+@media only screen and (max-width: 500px) {
+  div.project {
+    width: 50%;
+  }
+  section#projects h2 {
+    font-size: 32px;
+  }
+}
+
 #photos {
   opacity: 0.88;
 }
@@ -309,9 +317,9 @@ div.proj7 {
 ul {
   list-style: none;
   margin: 0px auto;
-  padding: 10px;
   display: block;
   text-align: center;
+  margin-left: -30px;
 }
 
 #overlay {
@@ -337,4 +345,36 @@ ul {
 
 #photo-gallery {
   width: 100%;
+}
+
+.proj-div {
+  display: block;
+  padding: 30px;
+  overflow: hidden;
+}
+
+.bujo #photos img {
+  width: 10%;
+}
+.do #photos img {
+  width: 13%;
+}
+
+.hbt #photos img {
+  width: 15%;
+}
+.tritri #photos img {
+  width: 13%;
+}
+
+.link {
+  display: block;
+  text-decoration: none;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.link:hover {
+  text-decoration: underline;
 }
