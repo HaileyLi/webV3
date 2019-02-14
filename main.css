@@ -284,7 +284,7 @@ div.proj7 {
     margin-top: 80%;
   }
 }
-
+/* 
 @media only screen and (max-width: 500px) {
   div.project {
     width: 50%;
@@ -292,7 +292,7 @@ div.proj7 {
   section#experiences h2 {
     font-size: 32px;
   }
-}
+} */
 
 #photos {
   opacity: 0.88;
@@ -377,4 +377,19 @@ ul {
 }
 .active {
   color: #fb302e !important;
+}
+.indicate {
+  color: #fb302e !important;
+}
+
+@media only screen and (max-width: 640px) {
+  #photos #photo-gallery li:nth-child(1) img {
+    width: 100%;
+  }
+  ul {
+    margin-left: -42px;
+  }
+  #photos img {
+    width: 23%;
+  }
 }

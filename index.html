@@ -94,7 +94,51 @@
 
                 </div>
             </div>
+            <div class="proj-div do">
+                <h2>Dr. Do Studio</h2>
+                <a class="link" target="_blank" href="https://dr-do-studio.github.io/indexSite/">https://dr-do-studio.github.io/indexSite/</a>
+                <a class="link" target="_blank" href="https://dr-do-studio.github.io/creative-studio/">https://dr-do-studio.github.io/creative-studio/</a>
+                <div id="photos">
+                    <ul id="photo-gallery">
+                        <li>
+                            <a target="_blank" href="img/do/indexdesign-01.jpg">
+                                <img src="img/do/indexdesign-01.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="img/do/indexdesign-02.jpg">
+                                <img src="img/do/indexdesign-02.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="img/do/indexdesign-03.jpg">
+                                <img src="img/do/indexdesign-03.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="img/do/indexdesign-04.jpg">
+                                <img src="img/do/indexdesign-04.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="img/do/indexdesign-05.jpg">
+                                <img src="img/do/indexdesign-05.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="img/do/indexdesign-06.jpg">
+                                <img src="img/do/indexdesign-06.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="img/do/indexdesign-07.jpg">
+                                <img src="img/do/indexdesign-07.jpg">
+                            </a>
+                        </li>
 
+                    </ul>
+                </div>
+            </div>
             <div class="proj-div quesbank">
                 <h2>QuesBank</h2>
                 <div id="photos">
@@ -275,49 +319,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="proj-div do">
-                <h2>Dr. Do Studio</h2>
-                <div id="photos">
-                    <ul id="photo-gallery">
-                        <li>
-                            <a target="_blank" href="img/do/indexdesign-01.jpg">
-                                <img src="img/do/indexdesign-01.jpg">
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="img/do/indexdesign-02.jpg">
-                                <img src="img/do/indexdesign-02.jpg">
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="img/do/indexdesign-03.jpg">
-                                <img src="img/do/indexdesign-03.jpg">
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="img/do/indexdesign-04.jpg">
-                                <img src="img/do/indexdesign-04.jpg">
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="img/do/indexdesign-05.jpg">
-                                <img src="img/do/indexdesign-05.jpg">
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="img/do/indexdesign-06.jpg">
-                                <img src="img/do/indexdesign-06.jpg">
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="img/do/indexdesign-07.jpg">
-                                <img src="img/do/indexdesign-07.jpg">
-                            </a>
-                        </li>
-
-                    </ul>
-                </div>
-            </div>
+          
             <div class="proj-div hbt">
                 <h2>HBT Team Web</h2>
                 <br>
@@ -535,7 +537,37 @@
   $("html,body").animate({ scrollTop: pos }, 1000);
   $('a.active').removeClass('active');
   $(this).addClass("active");
+  if (href == "#home"){
+    $(".h-letter").addClass("active");
+  }
+  if (href == "#intro"){
+    $(".i-letter").addClass("active");
+  }
+  if (href == "#experiences"){
+    $(".e-letter").addClass("active");
+  }
   return false;
+});
+
+$(".h-letter").mouseover(function() {
+  $(".h-letter").addClass("indicate");
+});
+$(".h-letter").mouseout(function() {
+  $(".h-letter").removeClass("indicate");
+});
+
+$(".i-letter").mouseover(function() {
+  $(".i-letter").addClass("indicate");
+});
+$(".i-letter").mouseout(function() {
+  $(".i-letter").removeClass("indicate");
+});
+
+$(".e-letter").mouseover(function() {
+  $(".e-letter").addClass("indicate");
+});
+$(".e-letter").mouseout(function() {
+  $(".e-letter").removeClass("indicate");
 });
   
   
