@@ -17,6 +17,33 @@ h1 {
   margin: 0;
   top: 40%;
 }
+.home-left a {
+  color: white;
+}
+.home-right a {
+  color: black;
+}
+#home a:hover {
+  color: #fb302e !important;
+}
+a,
+a::after {
+  transition-timing-function: ease-in-out;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+.nav-bg,
+.nav-bg::after {
+  transition-timing-function: ease-in-out;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  text-decoration: none;
+}
 section#home h1 {
   position: absolute;
 }
@@ -94,17 +121,18 @@ p#right2p {
   margin-top: 35%;
   color: white;
 }
-/* projects section */
-section#projects {
+/* experiences section */
+section#experiences {
   display: block;
   background-color: #131326;
   overflow: hidden;
   text-align: center;
   min-height: 100%;
   overflow: hidden;
+  padding-top: 157px;
 }
 
-section#projects h2 {
+section#experiences h2 {
   color: white;
   font-family: "Raleway", sans-serif;
   font-size: 52px;
@@ -209,12 +237,7 @@ div.proj7 {
   margin: auto;
   margin-left: 50px;
 }
-.collap nav.navigate {
-  display: none;
-}
-.expand nav.navigate {
-  display: block;
-}
+
 .bar {
   display: block;
   width: 40%;
@@ -236,38 +259,6 @@ div.proj7 {
 }
 .expand .bar:nth-child(3) {
   transform: translateY(-10px) rotate(-135deg);
-}
-
-.expand nav {
-  position: fixed;
-  transition: all 0.25s;
-  text-align: center;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  background-color: black;
-  ul {
-    transition: all 0s;
-    position: relative;
-    left: 0;
-    z-index: 2;
-  }
-  a {
-    transition: all 0.15s;
-    text-decoration: none;
-    font-size: 2em;
-    padding: 5px;
-    color: #fff;
-    display: block;
-    &:hover {
-      background-color: rgba(white, 0.8);
-      transition: all 0.15s;
-      letter-spacing: 2px;
-      color: #333;
-      border: 1px solid rgba(255, 255, 255, 0.15);
-    }
-  }
 }
 
 .moreinfo,
@@ -298,7 +289,7 @@ div.proj7 {
   div.project {
     width: 50%;
   }
-  section#projects h2 {
+  section#experiences h2 {
     font-size: 32px;
   }
 }
@@ -377,4 +368,13 @@ ul {
 
 .link:hover {
   text-decoration: underline;
+}
+
+.fixed {
+  position: fixed !important;
+  top: 0;
+  z-index: 100;
+}
+.active {
+  color: #fb302e !important;
 }

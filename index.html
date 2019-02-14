@@ -10,7 +10,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="docs.min.css" />
-    <script src="main.js"></script>
     <script src="bootstrap.min.js"></script>
     <script src="main.js"></script>
 </head>
@@ -19,36 +18,27 @@
     <div class="moreinfo">
         <img src="img/acc2.jpg">
     </div>
-    <div id="hamburger" class="collap">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <nav class="navigate">
-            <ul>
-                <li>
-                    <a href="#home">Home</a>
-                </li>
-                <li>
-                    <a href="#intro">BriefIntro</a>
-                </li>
-                <li>
-                    <a href="#projects">Projects</a>
-                </li>
-                <li>
-                    <a href="#experiences">Experiences</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
+   
     <div id="pad">
         <section id="home">
             <div class="home-left">
-                <h1>HAI</h1>
+                <h1><a href="#home" class="h-letter">H</a>A<a href="#intro" class="i-letter">I</a></h1>
+                <a class="nav h-letter" href="#home" style="font-size: 15px;color: white;position: fixed;right: calc(50% + 107px);top: 107px;    display:none;z-index: 200;">Home</a>
+        <a href="#intro" class="nav i-letter" style="font-size: 15px;color: white;position: fixed;right: 50%;top: 107px;    z-index: 200;display:none;">Intro</a>
             </div>
 
             <div class="home-right">
-                <h1>LEY</h1>
+                <h1>L<a href="#experiences" class="e-letter">E</a>Y</h1>
+         <a class="nav e-letter" href="#experiences" style="font-size: 15px;color: black;position: fixed;left: calc(50% + 41px);top: 107px;    display:none;z-index: 200;">Experiences</a>
             </div>
+            <div class="nav-bg" style="
+            position: fixed;
+            background: #0000004f;
+            width: 100%;
+            top: 0;
+            height: 141px;
+            display:none;
+        "></div>
         </section>
         <section id="intro">
             <div class="intro-left">
@@ -71,7 +61,7 @@
             <img src="img/resume-PS-2018.jpg" style="width:100%;">
         </section>
         </section>
-        <section id="projects">
+        <section id="experiences">
             <h2 class="title">PROJECTS & EXPERIENCES</h2>
             <div class="elist">
                 <div class="project imghover">
@@ -539,10 +529,17 @@
         </section>
     </div>
     <script>
-
-
-
-    </script>
+        $("a").click(function() {
+  var href = $(this).attr("href");
+  var pos = $(href).offset().top;
+  $("html,body").animate({ scrollTop: pos }, 1000);
+  $('a.active').removeClass('active');
+  $(this).addClass("active");
+  return false;
+});
+  
+  
+      </script>
 </body>
 
 </html>
