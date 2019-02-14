@@ -538,12 +538,15 @@
   $('a.active').removeClass('active');
   $(this).addClass("active");
   if (href == "#home"){
+    $('a.active').removeClass('active');
     $(".h-letter").addClass("active");
   }
   if (href == "#intro"){
+    $('a.active').removeClass('active');
     $(".i-letter").addClass("active");
   }
   if (href == "#experiences"){
+    $('a.active').removeClass('active');
     $(".e-letter").addClass("active");
   }
   return false;
