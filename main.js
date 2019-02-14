@@ -69,11 +69,11 @@ if (window.innerWidth > 768) {
 $(document).on("scroll", onScroll);
 function onScroll(event) {
   var scrollPos = $(document).scrollTop();
-  if (scrollPos <= 480) {
+  if (scrollPos <= 430) {
     $("a.active").removeClass("active");
     $(".h-letter").addClass("active");
   }
-  if (scrollPos > 480 && scrollPos <= 2000) {
+  if (scrollPos > 430 && scrollPos <= 2000) {
     $("a.active").removeClass("active");
     $(".i-letter").addClass("active");
   }
