@@ -13,23 +13,30 @@
     <script src="bootstrap.min.js"></script>
     <script src="main.js"></script>
 </head>
+<div style="text-align:center;position:fixed;opacity:0.2;"><a>you are the<br>
+        <img src='https://www.counter12.com/img-AZCC8b2Z76A3w00b-12.gif' style="border:0;" alt='web counter free'></a>
+    <script type='text/javascript' src='https://www.counter12.com/ad.js?id=AZCC8b2Z76A3w00b'></script><a>th visitor</a>
+</div>
 
 <body id="myweb">
     <div class="moreinfo">
         <img src="img/acc2.jpg">
     </div>
-   
+
     <div id="pad">
         <section id="home">
             <div class="home-left">
                 <h1><a href="#home" class="h-letter">H</a>A<a href="#intro" class="i-letter">I</a></h1>
-                <a class="nav h-letter" href="#home" style="font-size: 15px;color: white;position: fixed;right: calc(50% + 107px);top: 107px;    display:none;z-index: 200;">Home</a>
-        <a href="#intro" class="nav i-letter" style="font-size: 15px;color: white;position: fixed;right: 50%;top: 107px;    z-index: 200;display:none;">Intro</a>
+                <a class="nav h-letter" href="#home"
+                    style="font-size: 15px;color: white;position: fixed;right: calc(50% + 107px);top: 107px;    display:none;z-index: 200;">Home</a>
+                <a href="#intro" class="nav i-letter"
+                    style="font-size: 15px;color: white;position: fixed;right: 50%;top: 107px;    z-index: 200;display:none;">Intro</a>
             </div>
 
             <div class="home-right">
                 <h1>L<a href="#experiences" class="e-letter">E</a>Y</h1>
-         <a class="nav e-letter" href="#experiences" style="font-size: 15px;color: black;position: fixed;left: calc(50% + 41px);top: 107px;    display:none;z-index: 200;">Experiences</a>
+                <a class="nav e-letter" href="#experiences"
+                    style="font-size: 15px;color: black;position: fixed;left: calc(50% + 41px);top: 107px;    display:none;z-index: 200;">Experiences</a>
             </div>
             <div class="nav-bg" style="
             position: fixed;
@@ -96,8 +103,10 @@
             </div>
             <div class="proj-div do">
                 <h2>Dr. Do Studio</h2>
-                <a class="link" target="_blank" href="https://dr-do-studio.github.io/indexSite/">https://dr-do-studio.github.io/indexSite/</a>
-                <a class="link" target="_blank" href="https://dr-do-studio.github.io/creative-studio/">https://dr-do-studio.github.io/creative-studio/</a>
+                <a class="link" target="_blank"
+                    href="https://dr-do-studio.github.io/indexSite/">https://dr-do-studio.github.io/indexSite/</a>
+                <a class="link" target="_blank"
+                    href="https://dr-do-studio.github.io/creative-studio/">https://dr-do-studio.github.io/creative-studio/</a>
                 <div id="photos">
                     <ul id="photo-gallery">
                         <li>
@@ -175,7 +184,8 @@
 
             <div class="proj-div bujo">
                 <h2>BUJO</h2>
-                <a class="link" target="_blank" href="https://invis.io/69FRDNOERNJ#/278686558_View2-01">Link for prototype: https://invis.io/69FRDNOERNJ#/278686558_View2-01</a>
+                <a class="link" target="_blank" href="https://invis.io/69FRDNOERNJ#/278686558_View2-01">Link for
+                    prototype: https://invis.io/69FRDNOERNJ#/278686558_View2-01</a>
                 <div id="photos">
                     <ul id="photo-gallery">
                         <li>
@@ -319,11 +329,12 @@
                     </ul>
                 </div>
             </div>
-          
+
             <div class="proj-div hbt">
                 <h2>HBT Team Web</h2>
                 <br>
-                <a class="link" target="_blank" href="https://haileyli.github.io/HBTWEB.github.io/">https://haileyli.github.io/HBTWEB.github.io/</a>
+                <a class="link" target="_blank"
+                    href="https://haileyli.github.io/HBTWEB.github.io/">https://haileyli.github.io/HBTWEB.github.io/</a>
                 <div id="photos">
                     <ul id="photo-gallery">
                         <li>
@@ -365,7 +376,8 @@
             <div class="proj-div tritri">
                 <h2>Tri-tri Game App</h2>
                 <br>
-                <a class="link" target="_blank" href="https://itunes.apple.com/us/app/tri-tri/id1259058860?mt=8">Available in Appstore</a>
+                <a class="link" target="_blank"
+                    href="https://itunes.apple.com/us/app/tri-tri/id1259058860?mt=8">Available in Appstore</a>
                 <div id="photos">
                     <ul id="photo-gallery">
                         <li>
@@ -412,7 +424,8 @@
 
             <div class="proj-div oicr-form">
                 <h2>FORM</h2>
-                <a class="link" target="_blank" href="https://invis.io/FZ9N39165#/211264075_02-_Application_2">Link for prototype: https://invis.io/FZ9N39165#/211264075_02-_Application_2</a>
+                <a class="link" target="_blank" href="https://invis.io/FZ9N39165#/211264075_02-_Application_2">Link for
+                    prototype: https://invis.io/FZ9N39165#/211264075_02-_Application_2</a>
                 <div id="photos">
                     <ul id="photo-gallery">
                         <li>
@@ -531,50 +544,50 @@
         </section>
     </div>
     <script>
-        $("a").click(function() {
-  var href = $(this).attr("href");
-  var pos = $(href).offset().top;
-  $("html,body").animate({ scrollTop: pos }, 1000);
-  $('a.active').removeClass('active');
-  $(this).addClass("active");
-  if (href == "#home"){
-    $('a.active').removeClass('active');
-    $(".h-letter").addClass("active");
-  }
-  if (href == "#intro"){
-    $('a.active').removeClass('active');
-    $(".i-letter").addClass("active");
-  }
-  if (href == "#experiences"){
-    $('a.active').removeClass('active');
-    $(".e-letter").addClass("active");
-  }
-  return false;
-});
+        $("a").click(function () {
+            var href = $(this).attr("href");
+            var pos = $(href).offset().top;
+            $("html,body").animate({ scrollTop: pos }, 1000);
+            $('a.active').removeClass('active');
+            $(this).addClass("active");
+            if (href == "#home") {
+                $('a.active').removeClass('active');
+                $(".h-letter").addClass("active");
+            }
+            if (href == "#intro") {
+                $('a.active').removeClass('active');
+                $(".i-letter").addClass("active");
+            }
+            if (href == "#experiences") {
+                $('a.active').removeClass('active');
+                $(".e-letter").addClass("active");
+            }
+            return false;
+        });
 
-$(".h-letter").mouseover(function() {
-  $(".h-letter").addClass("indicate");
-});
-$(".h-letter").mouseout(function() {
-  $(".h-letter").removeClass("indicate");
-});
+        $(".h-letter").mouseover(function () {
+            $(".h-letter").addClass("indicate");
+        });
+        $(".h-letter").mouseout(function () {
+            $(".h-letter").removeClass("indicate");
+        });
 
-$(".i-letter").mouseover(function() {
-  $(".i-letter").addClass("indicate");
-});
-$(".i-letter").mouseout(function() {
-  $(".i-letter").removeClass("indicate");
-});
+        $(".i-letter").mouseover(function () {
+            $(".i-letter").addClass("indicate");
+        });
+        $(".i-letter").mouseout(function () {
+            $(".i-letter").removeClass("indicate");
+        });
 
-$(".e-letter").mouseover(function() {
-  $(".e-letter").addClass("indicate");
-});
-$(".e-letter").mouseout(function() {
-  $(".e-letter").removeClass("indicate");
-});
-  
-  
-      </script>
+        $(".e-letter").mouseover(function () {
+            $(".e-letter").addClass("indicate");
+        });
+        $(".e-letter").mouseout(function () {
+            $(".e-letter").removeClass("indicate");
+        });
+
+
+    </script>
 </body>
 
 </html>
