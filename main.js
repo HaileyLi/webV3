@@ -1,5 +1,5 @@
 if (window.innerWidth > 768) {
-  $(window).bind("scroll", function() {
+  $(window).bind("scroll", function () {
     if ($(window).scrollTop() > 350) {
       $("section#home h1").addClass("fixed");
       $(".nav").css("display", "block");
@@ -9,12 +9,16 @@ if (window.innerWidth > 768) {
       $(".home-right h1").css("color", "white");
       $(".home-left a").css("color", "black");
       $(".home-right a").css("color", "white");
+      $(".contact-button").css("color", "white");
+      $(".contact-button").css("background", "black");
     }
     if ($(window).scrollTop() < 800) {
       $(".home-left h1").css("color", "white");
       $(".home-right h1").css("color", "black");
       $(".home-left a").css("color", "white");
       $(".home-right a").css("color", "black");
+      $(".contact-button").css("color", "black");
+      $(".contact-button").css("background", "white");
     }
     if ($(window).scrollTop() <= 350) {
       $("section#home h1").removeClass("fixed");
@@ -26,13 +30,15 @@ if (window.innerWidth > 768) {
       $(".home-left a").css("color", "white");
       $(".home-right a").css("color", "white");
       $(".nav-bg").css("display", "block");
+      $(".contact-button").css("color", "black");
+      $(".contact-button").css("background", "white");
     }
     if ($(window).scrollTop() <= 1700) {
       $(".nav-bg").css("display", "none");
     }
   });
 } else {
-  $(window).bind("scroll", function() {
+  $(window).bind("scroll", function () {
     if ($(window).scrollTop() > 400) {
       $("section#home h1").addClass("fixed");
       $(".nav").css("display", "block");
@@ -82,3 +88,4 @@ function onScroll(event) {
     $(".e-letter").addClass("active");
   }
 }
+

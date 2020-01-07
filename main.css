@@ -149,8 +149,8 @@ section#experiences h2 {
   margin-bottom: 50px;
 }
 div.project {
-  float: left;
-  width: 25%;
+  display:inline-block;
+  width: 33%;
 }
 
 div.proj1 {
@@ -204,10 +204,7 @@ div.proj7 {
 }
 /* experiences section */
 
-.exp1 {
-  width: 100%;
-  float: left;
-}
+
 .pr {
   cursor: pointer;
 }
@@ -392,4 +389,81 @@ ul {
   #photos img {
     width: 23%;
   }
+}
+
+.des-exp{
+  background:white;
+  margin-top: -4px;
+  height: 200px;
+}
+
+img.pic {
+  width: 200px;
+  float:left;
+}
+
+.sub-des {
+  padding: 22px;
+}
+.txt{
+  margin-left:20px;
+  line-height: 1.5;
+}
+.des-exp{
+  display:none;
+}
+#des1,#des2,#des3,#des4,#des5,#des6{
+  display:none;
+}
+
+.gif-anim2{
+  width:300px;
+  position:absolute;
+}
+
+#contact{
+  background:black;
+  height:300px;
+  color:white;
+  text-align: center;
+  padding:20px;
+}
+.contact-button {
+  border-radius: 45px;
+  position: fixed;
+  background: white;
+  left: 30px;
+  top: 30px;
+  padding: 9px;
+  color:black;
+  font-size: 19px;
+  z-index: 4;
+  cursor: pointer;
+}
+#contact a{
+  color:white;
+  display:block;
+  margin:20px;
+
+}
+
+#contact a:hover{
+  color:#FB302E;
+
+}
+
+@media only screen and (max-width: 968px) {
+  div.project {
+    width: 32%;
+}
+img.pic {
+  width: 100%;
+  float:none;
+}
+.des-exp {
+  height: auto;
+}
+img.gif-anim2 {
+  margin-top: -17px;
+}
 }
