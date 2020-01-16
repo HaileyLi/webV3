@@ -713,7 +713,26 @@
         </section>
     </div>
     <script>
-
+        $("a").click(function () {
+            var href = $(this).attr("href");
+            var pos = $(href).offset().top;
+            $("html,body").animate({ scrollTop: pos }, 1000);
+            $('a.active').removeClass('active');
+            $(this).addClass("active");
+            if (href == "#home") {
+                $('a.active').removeClass('active');
+                $(".h-letter").addClass("active");
+            }
+            if (href == "#intro") {
+                $('a.active').removeClass('active');
+                $(".i-letter").addClass("active");
+            }
+            if (href == "#experiences") {
+                $('a.active').removeClass('active');
+                $(".e-letter").addClass("active");
+            }
+            return false;
+        });
 
         $(".h-letter").mouseover(function () {
             $(".h-letter").addClass("indicate");
