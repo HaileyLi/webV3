@@ -1,0 +1,81 @@
+body{
+    margin:0;
+    overflow:hidden;
+    font-family: 'Abel', sans-serif;
+
+}
+.left-pane{
+    width: 0px;
+    height: 0px;
+    border-right: 10vh solid transparent;
+    border-top: 30vh solid #ffffff80;
+    border-left: 50vh solid white;
+    border-bottom: 70vh solid #ffffff80;
+    /* border-top-left-radius: 50vh; */
+    /* border-top-right-radius: 50vh; */
+    /* border-bottom-left-radius: 69vh; */
+    /* border-bottom-right-radius: 50vh; */
+    position: absolute;
+    top: 0;
+}
+/* 
+.down-pane{
+    width: 0;
+    height: 0;
+    border-bottom: 150px solid #00000038;
+    border-left: 2000px solid transparent;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+} */
+
+h1 {
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    color: white;
+    font-family: 'Righteous', cursive;
+}
+.links {
+    position: absolute;
+    top: 24vh;
+    left: 28px;
+    color: black;
+    font-size: 2vh;
+    line-height: 2.5;
+    width: 40vh;
+}
+.links a{
+    text-decoration: none;
+    color:black;
+    display:block
+}
+.links a:hover{
+    color:red;
+}
+.video-container{
+    position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: hidden;
+}
+video{
+     /* Make video to at least 100% wide and tall */
+  min-width: 100%; 
+  min-height: 100%; 
+
+  /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+  width: auto;
+  height: auto;
+
+  /* Center the video */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+a.home-link {
+    font-size: 8vh;
+}

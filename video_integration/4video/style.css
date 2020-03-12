@@ -1,0 +1,36 @@
+body{
+    margin:0;
+    font-family: 'Abel', sans-serif;
+    padding:50px;
+    text-align: center;
+
+}
+h1 {
+    top:0;
+    color: black;
+    font-family: 'Righteous', cursive;
+    text-transform: uppercase;
+}
+.links {
+   width:100%;
+   
+}
+.links a{
+    text-decoration: none;
+    color:black;
+    display:block;
+    right:0;
+    margin:20px;
+}
+.links a:hover{
+    color:red;
+}
+a.home-link {
+    font-size: 20px;;
+}
+video{
+    margin:70px;
+}
+.module {
+    cursor: url('video_icon.png'), auto;	
+  }
